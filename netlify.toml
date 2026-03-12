@@ -1,0 +1,11 @@
+[build]
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/forms"
+  to = "/.netlify/functions/send-form"
+  status = 200
+  force = true
